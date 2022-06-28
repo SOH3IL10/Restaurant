@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link href="https://v1.fontapi.ir/css/Yekan" rel="stylesheet">
+    <script src="content-filter/js/modernizr.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="venobox/venobox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css"/>
+
+    <link rel="stylesheet" href="css/jquery.Modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loading">
+    </div>
+    <header>
+        <div class="overlay">
+            <div class="header-contetnt">
+                <div class="container flex-grow-1">
+                    <div class="row firstHeader">
+                        <div class="fast-contect d-flex col-lg-6 col-md-7 col-6">
+                            <i class="icofont-phone"></i> <span>  1111 222 912 98+</span>
+                            <span class="header-time-open"><i class="icofont-clock-time mr-2"></i> ساعت کاری: 11:00 صبح - 23:00 شب</span>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-6 language">
+                            <ul>
+                                <li class="active"><a href="#">فا</a></li>
+                                <li><a href="#">En</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <nav class="nav-defult">
+                    <div class="container d-flex">
+                        <div class="navbar">
+                            <ul>
+                                <li class="active">
+                                    <a href="#home">خانه</a>
+                                </li>
+                                <li>
+                                    <a href="#about">درباره ما</a>
+                                </li>
+                                <li>
+                                    <a href="#menu">منو</a>
+                                </li>
+                                <li>
+                                    <a href="#specials">منوی ویژه</a>
+                                </li>
+                                <li>
+                                    <a href="#events">مناسبت ها</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">گالری</a>
+                                </li>
+                                <li>
+                                    <a href="#chefs">آشپزها</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">تماس با ما</a>
+                                </li>
+                                <li id="reservation">
+                                    <a href="#book-table">رزرو میز</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="responsive-menu-btn">
+                            <span class="top"></span>
+                            <span class="main"></span>
+                            <span class="bottom"></span>
+                        </div>
+                        <div id="banner" class="mr-auto">
+                            <h1>
+                                <a href="#" class="mr-auto">رستـــوران</a>
+                            </h1>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="nav-mobile d-lg-none">
+                    <div class="container d-flex">
+                        <div class="navbar">
+                            <ul>
+                                <li>
+                                    <a href="index.html">خانه</a>
+                                </li>
+                                <li>
+                                    <a href="#about">درباره ما</a>
+                                </li>
+                                <li>
+                                    <a href="#menu">منو</a>
+                                </li>
+                                <li>
+                                    <a href="#specials">منوی ویژه</a>
+                                </li>
+                                <li>
+                                    <a href="#events">مناسبت ها</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">گالری</a>
+                                </li>
+                                <li>
+                                    <a href="#chefs">آشپزها</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">تماس با ما</a>
+                                </li>
+    
+                                <li id="reservation">
+                                    <a href="#book-table">رزرو میز</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="main-header" data-aos="zoom-in">
+                    <div class="container">
+                        <div class="row align-items-center main-header-content">
+                            <div class="col-lg-8 col-md-12 text-header">
+                                <h1>به <span>رستـــوران</span> خوش آمدید</h1>
+                                <p>ارائه غذای لذیذ و متنوع برای بیش از 18 سال!</p>
+                                <a href="#menu">منوی ما</a>
+                                <a href="#book-table">رزرو میز</a>
+                            </div>
+                            <div class="col-lg-4 col-md-12 mt-md-4 sh-video d-flex align-items-center justify-content-center">
+                                <a href="#" class="video-item"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about-text" data-aos="fade-up">
+                        <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h4>
+                        <p class="font-italic mb-4">اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                        <ul>
+                            <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در ایجاد کرد.</li>
+                            <li><i class="icofont-check-circled"></i>در این صورت می توان امید داشت ارائه راهکارها و شرایط سخت به پایان رسد. </li>
+                            <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در فارسی ایجاد کرد.در این صورت می توان امید داشت ارائه راهکارها و شرایط سخت تایپ به پایان رسد.</li>
+                        </ul>
+                        <p class="mt-4">الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
+                            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-img" data-aos="zoom-in-up">
+                        <div class="divImg">
+                            <img src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>چرا ما</span>
+                <h1>چرا انتخاب رستوران ما</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 whyUs-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="whyUs-box">
+                        <h2>01</h2>
+                        <h4>لورم ایپسوم</h4>
+                        <p> کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 whyUs-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="whyUs-box">
+                        <h2>02</h2>
+                        <h4>متن ساختگی</h4>
+                        <p> کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 whyUs-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="whyUs-box">
+                        <h2>03</h2>
+                        <h4>سادگی نامفهوم</h4>
+                        <p> کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>منو</span>
+                <h1>منوی خوش طعم ما را چک کنید</h1>
+            </div>
+            <div class="menu-content" data-aos="fade-up">
+                <div class="row menu-filter-wrapper">
+                    <div class="menu-filter col-lg-12 justify-content-center box-menu">
+                        <ul class="filters ">
+                            <li class="filter active" data-filter="*">همه</li>
+                            <li class="filter" data-filter=".food">غذای اصلی</li>
+                            <li class="filter" data-filter=".salads">سالاد</li>
+                            <li class="filter" data-filter=".specialty">مخصوص</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row menu-item box-list">
+                    <div class="col-lg-6 col-md-12 foods mix box-item specialty">
+                        <img src="img/menu/lobster-bisque.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">سوپ خرچنگ</a>
+                            <span>5.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item specialty">
+                        <img src="img/menu/bread-barrel.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">بشکه نان</a>
+                            <span>6.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item salads">
+
+                        <img src="img/menu/caesar.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">انتخاب های سزار</a>
+                            <span>7.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item salads">
+
+                        <img src="img/menu/greek-salad.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">سالاد یونانی</a>
+                            <span>8.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item food">
+
+                        <img src="img/menu/lobster-roll.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">رول لابستر</a>
+                            <span>9.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item food">
+
+                        <img src="img/menu/mozzarella.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">استیک موزارلا</a>
+                            <span>4.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item salads">
+
+                        <img src="img/menu/spinach-salad.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">سالاد اسپانیایی</a>
+                            <span>9.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item food">
+
+                        <img src="img/menu/tuscan-grilled.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">توسکانی کبابی</a>
+                            <span>9.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 foods mix box-item specialty">
+                        <img src="img/menu/cake.jpg" alt="" class="food-img">
+                        <div class=" food-item">
+                            <a href="">کراپ کیک</a>
+                            <span>12.95$</span>
+                        </div>
+                        <div class="materials">
+                            <p>لورم، ایپسوم، ساختگی، تولید، سادگی</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specials">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>منوی ویژه</span>
+                <h1>منوی مخصوص ما را چک کنید</h1>
+            </div>
+            <div class="row special-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-12 special-list">
+                    <div class="special-list-item">
+                        <ul>
+                            <li class="bg-active"><a href="" data-specialBtn="item1" class="btn-item">لورم ایپسوم</a></li>
+                            <li><a href="" data-specialBtn="item2" class="btn-item">متن ساختگی</a></li>
+                            <li><a href="" data-specialBtn="item3" class="btn-item">تولید سادگی</a></li>
+                            <li><a href="" data-specialBtn="item4" class="btn-item">مفهوم از صنعت</a></li>
+                            <li><a href="" data-specialBtn="item5" class="btn-item">شکل ظاهری</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 special-content" id="item1">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 special-content-text">
+                            <h4>لورم ایپسوم متن ساختگی با تولید از صنعت</h4>
+                            <i>وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</i>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
+                                توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 special-content-img">
+                            <img src="img/specials-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 special-content" id="item2">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 special-content-text">
+                            <h4>و متون بلکه روزنی با تولید سادگی نامفهوم از صنعت</h4>
+                            <i> کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته</i>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
+                                توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 special-content-img">
+                            <img src="img/specials-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 special-content" id="item3">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 special-content-text">
+                            <h4>برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </h4>
+                            <i>حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را </i>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
+                                توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 special-content-img">
+                            <img src="img/specials-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 special-content" id="item4">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 special-content-text">
+                            <h4> نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی</h4>
+                            <i>برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</i>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
+                                توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 special-content-img">
+                            <img src="img/specials-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 special-content" id="item5">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 special-content-text">
+                            <h4>الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد</h4>
+                            <i>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد </i>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
+                                توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 special-content-img">
+                            <img src="img/specials-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="overlay">
+            <div class="container">
+                <div class="title" data-aos="fade-up">
+                    <span>مناسبت ها</span>
+                    <h1>مناسبت های خود را در رستوران ما بگیرید</h1>
+                </div>
+                <div class="event-container swiper-container mySwiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row event-content swiper-wrapper">
+                        <div class="col-lg-12 event-item swiper-slide">
+                            <div class="row event">
+                                <div class="col-lg-6 col-md-12 event-img">
+                                    <img src="img/event-birthday.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-12 event-text">
+                                    <h4>جشن تولد</h4>
+                                    <div class="price my-3">
+                                        <p><span>$189</span></p>
+                                    </div>
+                                    <p class="font-italic mb-3">اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز ابزارهای کاربردی می باشد.</p>
+                                    <ul>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در کرد.</li>
+                                        <li><i class="icofont-check-circled"></i>در این صورت می توان امید داشت ارائه راهکارها و شرایط سخت به رسد. </li>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طرین صورت می توان ایپ به رسد.</li>
+                                    </ul>
+                                    <p class="mt-3">الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 event-item swiper-slide">
+                            <div class="row event">
+                                <div class="col-lg-6 col-md-12 event-img">
+                                    <img src="img/event-custom.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-12 event-text">
+                                    <h4>مهمانی های سفارشی</h4>
+                                    <div class="price my-3">
+                                        <p><span>$99</span></p>
+                                    </div>
+                                    <p class="font-italic mb-3">اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز ابزارهای کاربردی می باشد.</p>
+                                    <ul>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در کرد.</li>
+                                        <li><i class="icofont-check-circled"></i>در این صورت می توان امید داشت ارائه راهکارها و شرایط سخت به رسد. </li>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طرین صورت می توان ایپ به رسد.</li>
+                                    </ul>
+                                    <p class="mt-3">الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 event-item swiper-slide">
+                            <div class="row event">
+                                <div class="col-lg-6 col-md-12 event-img">
+                                    <img src="img/event-private.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-12 event-text">
+                                    <h4>مهمانی های خصوصی</h4>
+                                    <div class="price my-3">
+                                        <p><span>$290</span></p>
+                                    </div>
+                                    <p class="font-italic mb-3">اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز ابزارهای کاربردی می باشد.</p>
+                                    <ul>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در کرد.</li>
+                                        <li><i class="icofont-check-circled"></i>در این صورت می توان امید داشت ارائه راهکارها و شرایط سخت به رسد. </li>
+                                        <li><i class="icofont-check-circled"></i>طراحان رایانه ای علی الخصوص طرین صورت می توان ایپ به رسد.</li>
+                                    </ul>
+                                    <p class="mt-3">الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="book-table">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>رزرو</span>
+                <h1>یک میز رزرو کنید</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 table-form" data-aos="fade-up" data-aos-delay="200">
+                    <form id="bookTableForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="bookTableName" placeholder="نام شما" required>
+                                <p id="nameError"></p>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="bookTableEmail" placeholder="ایمیل شما" required>
+                                <p id="emailError"></p>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="tel" class="form-control" id="bookTablePhone" placeholder="تلفن شما" required>
+                                <p id="phoneError"></p>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control datepicker" id="bookTableDate" autocomplete="off" placeholder="تاریخ و ساعت" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="number" class="form-control" id="bookTablePeople" placeholder="تعداد نفر #" required>
+                                <p id="peopleError"></p>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" rows="5" id="bookTableText" placeholder="پیام"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-block col-lg-2 col-sm-3 mx-auto">رزرو میز</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memeber-comment">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>نظرات</span>
+                <h1>آنچه دیگران درباره ما می گویند</h1>
+            </div>
+            <div class="swiper-container mySwiper1" data-aos="zoom-in">
+                <div class="member-comment-content row flex-nowrap swiper-wrapper">
+                    <div class="memmber-comment-item col-lg-4 swiper-slide">
+                        <div class="member-detalis">
+                            <p><i class="icofont-quote-right"></i>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی موردنیاز
+                                و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد
+                                <i class="icofont-quote-left"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-1.jpg" alt="">
+                            <h5>سهیل</h5>
+                            <span>طراح وب</span>
+                        </div>
+                    </div>
+                    <div class="memmber-comment-item col-lg-4 swiper-slide">
+                        <div class="member-detalis">
+                            <p><i class="icofont-quote-right"></i>حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان
+                                برند.
+                                <i class="icofont-quote-left"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-2.jpg" alt="">
+                            <h5>سارا</h5>
+                            <span>گرافیک کار</span>
+                        </div>
+                    </div>
+                    <div class="memmber-comment-item col-lg-4 swiper-slide">
+                        <div class="member-detalis">
+                            <p><i class="icofont-quote-right"></i> صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما
+                                نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به
+                                <i class="icofont-quote-left"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-3.jpg" alt="">
+                            <h5>زهرا</h5>
+                            <span>طراح وب</span>
+                        </div>
+                    </div>
+                    <div class="memmber-comment-item col-lg-4 swiper-slide">
+                        <div class="member-detalis">
+                            <p><i class="icofont-quote-right"></i>صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های
+                                آزمایشی و بی‌معنی استفاده
+                                <i class="icofont-quote-left"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-4.jpg" alt="">
+                            <h5>علی</h5>
+                            <span>فریلنسر</span>
+                        </div>
+                    </div>
+                    <div class="memmber-comment-item col-lg-4 swiper-slide">
+                        <div class="member-detalis">
+                            <p><i class="icofont-quote-right"></i> نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و
+                                اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به
+                                <i class="icofont-quote-left"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-5.jpg" alt="">
+                            <h5>مهدی</h5>
+                            <span>بک اند سایت</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>گالری</span>
+                <h1>چند عکس از رستوران ما</h1>
+            </div>
+        </div>
+        <div class="container-fluid gallery-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-1.jpg"><img src="img/gallery/gallery-1.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-2.jpg"><img src="img/gallery/gallery-2.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-3.jpg"><img src="img/gallery/gallery-3.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-4.jpg"><img src="img/gallery/gallery-4.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-5.jpg"><img src="img/gallery/gallery-5.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-6.jpg"><img src="img/gallery/gallery-6.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-7.jpg"><img src="img/gallery/gallery-7.jpg" alt="image alt" /></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 gallery-item">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/gallery-8.jpg"><img src="img/gallery/gallery-8.jpg" alt="image alt" /></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="chefs">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>آشپزها</span>
+                <h1>آشپز های حرفه ای ما</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 chef-detalis" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/chefs/chefs-1.jpg" alt="">
+                    <div class="chef-info">
+                        <div class="chef-name">
+                            <h6>مهدی</h6>
+                            <span>سرآشپز</span>
+                        </div>
+
+                        <div class="chef-social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 chef-detalis" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="img/chefs/chefs-2.jpg" alt="">
+                    <div class="chef-info">
+                        <div class="chef-name">
+                            <h6>نرگس</h6>
+                            <span>دیزاینر</span>
+                        </div>
+
+                        <div class="chef-social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 chef-detalis" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="img/chefs/chefs-3.jpg" alt="">
+                    <div class="chef-info">
+                        <div class="chef-name">
+                            <h6>علی</h6>
+                            <span>آشپز</span>
+                        </div>
+
+                        <div class="chef-social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="title" data-aos="fade-up">
+                <span>ارتباط</span>
+                <h1>ارتباط با ما</h1>
+            </div>
+        </div>
+        <div class="container-fluid google-map" data-aos="fade-up">
+            <div class="row">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0"
+                        style="border:0; width: 100%; height: 350px;" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-4 col-md-12 contact-information">
+                    <ul>
+                        <li><i class="icofont-google-map"></i>
+                            <p>آدرس:</p>
+                            <span>ایران، خوزستان</span>
+                        </li>
+                        <li><i class="icofont-clock-time"></i>
+                            <p>ساعات کاری:</p>
+                            <span>شنبه تا پنج شنبه: </span><br><span> 11:00 صبح - 23:00 شب</span>
+                        </li>
+                        <li><i class="icofont-ui-message"></i>
+                            <p>ایمیل:</p>
+                            <span>info@example.com</span>
+                        </li>
+                        <li><i class="icofont-ui-call"></i>
+                            <p>تماس:</p>
+                            <span>
+                                1111 222 912 98+</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-12 contact-send-message">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control" id="contactName" placeholder="نام شما" required>
+                                <p id="contactNameError"></p>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" class="form-control" id="contactEmail" placeholder="ایمیل شما" required>
+                                <p id="contactEmailError"></p>
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" id="contactSubject" placeholder="عنوان" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" id="contactText" rows="5" placeholder="پیام"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-block col-lg-3 col-md-4 col-sm-4 mx-auto">ارسال پیام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 information">
+                        <h1>رستـــوران</h1>
+                        <div class="footer-address">
+                            <p>ایران</p>
+                            <p>خوزستان</p>
+                        </div>
+                        <div class="footer-contact">
+                            <p><b>تماس: </b>8521 748 912 98+</p>
+                            <p><b>ایمیل: </b>info@example.com</p>
+                        </div>
+                        <div class="social-media">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                            <a href=""><i class="icofont-skype"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 useful-links">
+                        <h5>لینک های مفید</h5>
+                        <ul>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="index.html">خانه</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="#about">درباره ما</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">خدمات</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">شرایط استفاده از خدمات</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">قوانین و مقررات</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 our-service">
+                        <h5>خدمات ما</h5>
+                        <ul>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">طراحی سایت</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">توسعه وب</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">مدیریت تولید</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">بازاریابی</a>
+                            </li>
+                            <li><i class="icofont-simple-left"></i>
+                                <a href="">طراحی گرافیک</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 newsletter">
+                        <h5>خبرنامه ما</h5>
+                        <div class="newsletter-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        </div>
+                        <form class="subscribe">
+                            <input type="email">
+                            <button>عضویت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 copyright">
+                        <p>&copy; کلیه‌ی حقوق نزد رستـــوران محفوظ است.</p>
+                    </div>
+                    <div class="col-12 designed-by">
+                        <p>طراحی شده توسط <b>SOH3IL</b></p>
+                    </div>
+                    <div class="col-12 social-link">
+                        <a href="https://github.com/SOH3IL10" target='_blank'><img src="https://img.icons8.com/material-rounded/24/000000/github.png" style="border-radius: 50%; background-color: #fff;" /></a>
+                        <span>❤️</span>
+                        <span>❤️</span>
+                        <a href="https://www.linkedin.com/in/soheil-rashno" target='_blank'><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-linkedin-in-logo-used-for-professional-networking-logo-color-tal-revivo.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="back-to-top">
+        <a href=""><i class="icofont-arrow-up"></i></a>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="content-filter/js/jquery.mixitup.min.js"></script>
+    <script src="content-filter/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="venobox/venobox.min.js"></script>
+    <script src="js/jquery.Modal.js"></script>
+    <script src="https://unpkg.com/persian-date@1.1.0/dist/persian-date.min.js"></script>
+    <script src="https://unpkg.com/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+    
+    <script src="js/script.js"></script>
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>

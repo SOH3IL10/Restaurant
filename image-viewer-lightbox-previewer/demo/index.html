@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+		<title>Image Viewer/Lightbox Example</title>
+		<link rel="stylesheet" href="../src/index.css" />
+		<style>
+			html,* { font-family: 'Inter'; box-sizing: border-box; }
+body { background-color: #fafafa; line-height:1.6;}
+.lead { font-size: 1.5rem; font-weight: 300; }
+.container { margin: 150px auto; max-width: 960px; }
+.btn { padding: 1.25rem; border: 0; border-radius: 3px; background-color: #4F46E5; color: #fff; cursor: pointer; }
+			body {
+				margin: 0;
+				padding: 10px;
+			}
+			#app {
+				-webkit-column-count: 4;
+				-moz-column-count: 4;
+				column-count: 4;
+				-webkit-column-gap: 15px;
+				-moz-column-gap: 15px;
+				column-gap: 15px;
+			}
+			#app img {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+<h1>Image Viewer/Lightbox Example</h1>
+<div style="margin:30px auto"><div id="carbon-block"></div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSSScript Demo Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="3025259193"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<p class="lead">A lightweight image viewer/lightbox JavaScript library that is easy to implement on all images with a single JS call.</p>
+		<button id="add">Add A New Image</button>
+		<br />
+		<div id="app">
+			<img src="https://source.unsplash.com/kbwQXp3MBi4/800x1300" alt="" />
+			<img src="https://source.unsplash.com/Eb1mX9ds7sc/800x1300" alt="" />
+			<img src="https://source.unsplash.com/LWPAWvTy1NU/1300x800" alt="" />
+			<img src="https://source.unsplash.com/2rVOFRFWCZU/1300x800" alt="" />
+			<img src="https://source.unsplash.com/-m2yzI-YUSA/1300x800" alt="" />
+			<img src="https://source.unsplash.com/c5fT6LlgRv8/1300x800" alt="" />
+			<img src="https://source.unsplash.com/Id7saSyDlu0/1300x800" alt="" />
+			<img src="https://source.unsplash.com/ADBOC3UP4eQ/800x1300" alt="" />
+			<img src="https://source.unsplash.com/BEeZpcEXS_c/1300x800" alt="" />
+		</div>
+</div>
+		<script src="../dist/img-previewer.min.js"></script>
+		<script>
+			const a = new ImgPreviewer('body', {
+				scrollbar: true
+			})
+			function add() {
+				let img = document.createElement('img')
+				img.src = `https://picsum.photos/500/500?random=${Math.random()}`
+				img.onload = function () {
+					document.getElementById('app').appendChild(img)
+					a.update()
+				}
+			}
+			document.getElementById('add').onclick = add
+		</script>
+		<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

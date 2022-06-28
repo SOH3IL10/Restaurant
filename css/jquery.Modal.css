@@ -1,0 +1,40 @@
+.slModalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 999;
+    display: none;
+}
+
+.slModal {
+    position: fixed;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #cda45e;
+    min-width: 20% !important;
+    max-width: 90% !important;
+    z-index: 99999;
+    background-color: #000000;
+    display: none;
+    box-sizing: border-box;
+}
+
+.closeBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #c54343;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+}
+
+.closeBtn:hover {
+    background-color: #ff0000;
+}
