@@ -94,50 +94,37 @@ $(document).ready(function() {
 
 
     /***************** Member Comment Slider *****************/
-    if (window.innerWidth > 992) {
-        var swiper = new Swiper(".mySwiper1", {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            }
-        });
-    } else if (window.innerWidth <= 992 && window.innerWidth > 768) {
-        var swiper = new Swiper(".mySwiper1", {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            }
-        });
-    } else if (window.innerWidth <= 768) {
-        var swiper = new Swiper(".mySwiper1", {
+    var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+          200: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            }
-        });
-    }
-
+          },
+          640: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+        },
+      });
 
     /***************** Menu Filter and active btn *****************/
     var mixer = mixitup('.box-list')
@@ -199,6 +186,7 @@ $(document).ready(function() {
         }
         var clinetText = $("#bookTableText");
         if (nameRegex.test(clintName.val()) && emailRegex.test(clintEmail.val()) && phoneNumberRegex.test(clintPhone.val()) && peopleRegex.test(clintPeople.val())) {
+            alert("رزرو میز  با موفقیت انجام شد.");
             clintName.val("");
             clintEmail.val("");
             clintPhone.val("");
