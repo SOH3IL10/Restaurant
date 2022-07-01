@@ -1,5 +1,5 @@
 # Restaurant
-Hi this is a restaurant website. in this site you can give information about our resturant, book a table, see our Chefs, see a delicious menu, customer feedback and ...
+Hi this is a restaurant website. in this site you can take information about our restaurant, book a table, see our Chefs, see a delicious menu, customer feedback and ...
 
 website link :
 https://soh3il10.github.io/Restaurant/
